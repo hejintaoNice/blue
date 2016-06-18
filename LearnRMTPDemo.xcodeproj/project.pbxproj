@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		500595B654CF50765186C2C0 /* libPods-LearnRMTPDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 843B84284AA9348B417B027D /* libPods-LearnRMTPDemo.a */; };
+		E41086C21D14F9EC00D67FF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E41086C11D14F9EC00D67FF0 /* main.m */; };
+		E41086C51D14F9EC00D67FF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E41086C41D14F9EC00D67FF0 /* AppDelegate.m */; };
+		E41086C81D14F9EC00D67FF0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E41086C71D14F9EC00D67FF0 /* ViewController.m */; };
+		E41086CB1D14F9EC00D67FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E41086C91D14F9EC00D67FF0 /* Main.storyboard */; };
+		E41086CD1D14F9EC00D67FF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E41086CC1D14F9EC00D67FF0 /* Assets.xcassets */; };
+		E41086D01D14F9EC00D67FF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E41086CE1D14F9EC00D67FF0 /* LaunchScreen.storyboard */; };
+		E41086DB1D14F9ED00D67FF0 /* LearnRMTPDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E41086DA1D14F9ED00D67FF0 /* LearnRMTPDemoTests.m */; };
+		E41086E61D14F9ED00D67FF0 /* LearnRMTPDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E41086E51D14F9ED00D67FF0 /* LearnRMTPDemoUITests.m */; };
+		E41087011D14FC4200D67FF0 /* HJTClearCacheTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E41086FB1D14FC4200D67FF0 /* HJTClearCacheTool.m */; };
+		E41087021D14FC4200D67FF0 /* HJTNetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E41086FD1D14FC4200D67FF0 /* HJTNetTool.m */; };
+		E41087031D14FC4200D67FF0 /* UIViewController+changeNavBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E41087001D14FC4200D67FF0 /* UIViewController+changeNavBarItem.m */; };
+		E41087081D14FD2000D67FF0 /* TableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = E41087051D14FD2000D67FF0 /* TableViewDataSource.m */; };
+		E41087091D14FD2000D67FF0 /* TableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E41087071D14FD2000D67FF0 /* TableViewDelegate.m */; };
+		E41087101D14FDAF00D67FF0 /* DataTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E410870E1D14FDAF00D67FF0 /* DataTableViewCell.m */; };
+		E41087111D14FDAF00D67FF0 /* DataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E410870F1D14FDAF00D67FF0 /* DataTableViewCell.xib */; };
+		E41087191D15076400D67FF0 /* MovieRMTPCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = E41087131D15076400D67FF0 /* MovieRMTPCreator.m */; };
+		E410871A1D15076400D67FF0 /* MovieRMTPLives.m in Sources */ = {isa = PBXBuildFile; fileRef = E41087161D15076400D67FF0 /* MovieRMTPLives.m */; };
+		E410871B1D15076400D67FF0 /* MovieRMTPMovieRMTP.m in Sources */ = {isa = PBXBuildFile; fileRef = E41087181D15076400D67FF0 /* MovieRMTPMovieRMTP.m */; };
+		E410871E1D15105D00D67FF0 /* LiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E410871D1D15105D00D67FF0 /* LiveViewController.m */; };
+		E41087201D15119300D67FF0 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E410871F1D15119300D67FF0 /* Accelerate.framework */; };
+		E41087221D1511A400D67FF0 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41087211D1511A400D67FF0 /* VideoToolbox.framework */; };
+		E41087241D1511DC00D67FF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41087231D1511DC00D67FF0 /* UIKit.framework */; };
+		E41087261D1511E200D67FF0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41087251D1511E200D67FF0 /* QuartzCore.framework */; };
+		E41087281D1511EA00D67FF0 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41087271D1511EA00D67FF0 /* OpenGLES.framework */; };
+		E410872A1D1511F400D67FF0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41087291D1511F400D67FF0 /* MobileCoreServices.framework */; };
+		E410872C1D1511FD00D67FF0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E410872B1D1511FD00D67FF0 /* MediaPlayer.framework */; };
+		E410872E1D15120600D67FF0 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E410872D1D15120600D67FF0 /* CoreVideo.framework */; };
+		E41087301D15120D00D67FF0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E410872F1D15120D00D67FF0 /* CoreMedia.framework */; };
+		E41087321D15121400D67FF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41087311D15121400D67FF0 /* CoreGraphics.framework */; };
+		E41087341D15121900D67FF0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41087331D15121900D67FF0 /* AVFoundation.framework */; };
+		E41087361D15122200D67FF0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41087351D15122200D67FF0 /* AudioToolbox.framework */; };
+		E41087381D15122A00D67FF0 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E41087371D15122A00D67FF0 /* libbz2.tbd */; };
+		E410873A1D15123400D67FF0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E41087391D15123400D67FF0 /* libz.tbd */; };
+		E410873C1D15123B00D67FF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E410873B1D15123B00D67FF0 /* Foundation.framework */; };
+		E410873E1D15126A00D67FF0 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E410873D1D15126A00D67FF0 /* IJKMediaFramework.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E41086D71D14F9ED00D67FF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E41086B51D14F9EC00D67FF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E41086BC1D14F9EC00D67FF0;
+			remoteInfo = LearnRMTPDemo;
+		};
+		E41086E21D14F9ED00D67FF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E41086B51D14F9EC00D67FF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E41086BC1D14F9EC00D67FF0;
+			remoteInfo = LearnRMTPDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E3F75E85BAF62FCB312F1D1 /* Pods-LearnRMTPDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnRMTPDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnRMTPDemo/Pods-LearnRMTPDemo.release.xcconfig"; sourceTree = "<group>"; };
+		843B84284AA9348B417B027D /* libPods-LearnRMTPDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LearnRMTPDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C45F664A373DA61A20B2F387 /* Pods-LearnRMTPDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnRMTPDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnRMTPDemo/Pods-LearnRMTPDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E41086BD1D14F9EC00D67FF0 /* LearnRMTPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnRMTPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E41086C11D14F9EC00D67FF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E41086C31D14F9EC00D67FF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E41086C41D14F9EC00D67FF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E41086C61D14F9EC00D67FF0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E41086C71D14F9EC00D67FF0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E41086CA1D14F9EC00D67FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E41086CC1D14F9EC00D67FF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E41086CF1D14F9EC00D67FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E41086D11D14F9ED00D67FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E41086D61D14F9ED00D67FF0 /* LearnRMTPDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnRMTPDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E41086DA1D14F9ED00D67FF0 /* LearnRMTPDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnRMTPDemoTests.m; sourceTree = "<group>"; };
+		E41086DC1D14F9ED00D67FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E41086E11D14F9ED00D67FF0 /* LearnRMTPDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnRMTPDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E41086E51D14F9ED00D67FF0 /* LearnRMTPDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LearnRMTPDemoUITests.m; sourceTree = "<group>"; };
+		E41086E71D14F9ED00D67FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E41086F91D14FC4200D67FF0 /* CustomTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTool.h; sourceTree = "<group>"; };
+		E41086FA1D14FC4200D67FF0 /* HJTClearCacheTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJTClearCacheTool.h; sourceTree = "<group>"; };
+		E41086FB1D14FC4200D67FF0 /* HJTClearCacheTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJTClearCacheTool.m; sourceTree = "<group>"; };
+		E41086FC1D14FC4200D67FF0 /* HJTNetTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJTNetTool.h; sourceTree = "<group>"; };
+		E41086FD1D14FC4200D67FF0 /* HJTNetTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJTNetTool.m; sourceTree = "<group>"; };
+		E41086FE1D14FC4200D67FF0 /* ServerAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerAddress.h; sourceTree = "<group>"; };
+		E41086FF1D14FC4200D67FF0 /* UIViewController+changeNavBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+changeNavBarItem.h"; sourceTree = "<group>"; };
+		E41087001D14FC4200D67FF0 /* UIViewController+changeNavBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+changeNavBarItem.m"; sourceTree = "<group>"; };
+		E41087041D14FD2000D67FF0 /* TableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDataSource.h; sourceTree = "<group>"; };
+		E41087051D14FD2000D67FF0 /* TableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDataSource.m; sourceTree = "<group>"; };
+		E41087061D14FD2000D67FF0 /* TableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDelegate.h; sourceTree = "<group>"; };
+		E41087071D14FD2000D67FF0 /* TableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDelegate.m; sourceTree = "<group>"; };
+		E410870D1D14FDAF00D67FF0 /* DataTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTableViewCell.h; sourceTree = "<group>"; };
+		E410870E1D14FDAF00D67FF0 /* DataTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataTableViewCell.m; sourceTree = "<group>"; };
+		E410870F1D14FDAF00D67FF0 /* DataTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataTableViewCell.xib; sourceTree = "<group>"; };
+		E41087121D15076400D67FF0 /* MovieRMTPCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieRMTPCreator.h; sourceTree = "<group>"; };
+		E41087131D15076400D67FF0 /* MovieRMTPCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieRMTPCreator.m; sourceTree = "<group>"; };
+		E41087141D15076400D67FF0 /* MovieRMTPDataModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieRMTPDataModels.h; sourceTree = "<group>"; };
+		E41087151D15076400D67FF0 /* MovieRMTPLives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieRMTPLives.h; sourceTree = "<group>"; };
+		E41087161D15076400D67FF0 /* MovieRMTPLives.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieRMTPLives.m; sourceTree = "<group>"; };
+		E41087171D15076400D67FF0 /* MovieRMTPMovieRMTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieRMTPMovieRMTP.h; sourceTree = "<group>"; };
+		E41087181D15076400D67FF0 /* MovieRMTPMovieRMTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieRMTPMovieRMTP.m; sourceTree = "<group>"; };
+		E410871C1D15105D00D67FF0 /* LiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LiveViewController.h; sourceTree = "<group>"; };
+		E410871D1D15105D00D67FF0 /* LiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LiveViewController.m; sourceTree = "<group>"; };
+		E410871F1D15119300D67FF0 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		E41087211D1511A400D67FF0 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		E41087231D1511DC00D67FF0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E41087251D1511E200D67FF0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E41087271D1511EA00D67FF0 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		E41087291D1511F400D67FF0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		E410872B1D1511FD00D67FF0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		E410872D1D15120600D67FF0 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		E410872F1D15120D00D67FF0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		E41087311D15121400D67FF0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E41087331D15121900D67FF0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E41087351D15122200D67FF0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E41087371D15122A00D67FF0 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		E41087391D15123400D67FF0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		E410873B1D15123B00D67FF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E410873D1D15126A00D67FF0 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E41086BA1D14F9EC00D67FF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E410873C1D15123B00D67FF0 /* Foundation.framework in Frameworks */,
+				E410873A1D15123400D67FF0 /* libz.tbd in Frameworks */,
+				E41087381D15122A00D67FF0 /* libbz2.tbd in Frameworks */,
+				E41087361D15122200D67FF0 /* AudioToolbox.framework in Frameworks */,
+				E41087341D15121900D67FF0 /* AVFoundation.framework in Frameworks */,
+				E410873E1D15126A00D67FF0 /* IJKMediaFramework.framework in Frameworks */,
+				E41087321D15121400D67FF0 /* CoreGraphics.framework in Frameworks */,
+				E41087301D15120D00D67FF0 /* CoreMedia.framework in Frameworks */,
+				E410872E1D15120600D67FF0 /* CoreVideo.framework in Frameworks */,
+				E410872C1D1511FD00D67FF0 /* MediaPlayer.framework in Frameworks */,
+				E410872A1D1511F400D67FF0 /* MobileCoreServices.framework in Frameworks */,
+				E41087281D1511EA00D67FF0 /* OpenGLES.framework in Frameworks */,
+				E41087261D1511E200D67FF0 /* QuartzCore.framework in Frameworks */,
+				E41087241D1511DC00D67FF0 /* UIKit.framework in Frameworks */,
+				E41087221D1511A400D67FF0 /* VideoToolbox.framework in Frameworks */,
+				E41087201D15119300D67FF0 /* Accelerate.framework in Frameworks */,
+				500595B654CF50765186C2C0 /* libPods-LearnRMTPDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41086D31D14F9ED00D67FF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41086DE1D14F9ED00D67FF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CAE8233E7D197402C24529B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E410873B1D15123B00D67FF0 /* Foundation.framework */,
+				E41087391D15123400D67FF0 /* libz.tbd */,
+				E41087371D15122A00D67FF0 /* libbz2.tbd */,
+				E41087351D15122200D67FF0 /* AudioToolbox.framework */,
+				E41087331D15121900D67FF0 /* AVFoundation.framework */,
+				E41087311D15121400D67FF0 /* CoreGraphics.framework */,
+				E410872F1D15120D00D67FF0 /* CoreMedia.framework */,
+				E410872D1D15120600D67FF0 /* CoreVideo.framework */,
+				E410872B1D1511FD00D67FF0 /* MediaPlayer.framework */,
+				E41087291D1511F400D67FF0 /* MobileCoreServices.framework */,
+				E41087271D1511EA00D67FF0 /* OpenGLES.framework */,
+				E41087251D1511E200D67FF0 /* QuartzCore.framework */,
+				E41087231D1511DC00D67FF0 /* UIKit.framework */,
+				E41087211D1511A400D67FF0 /* VideoToolbox.framework */,
+				E410871F1D15119300D67FF0 /* Accelerate.framework */,
+				843B84284AA9348B417B027D /* libPods-LearnRMTPDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A829E2A0850B0AAB6CD9B31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C45F664A373DA61A20B2F387 /* Pods-LearnRMTPDemo.debug.xcconfig */,
+				3E3F75E85BAF62FCB312F1D1 /* Pods-LearnRMTPDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E41086B41D14F9EC00D67FF0 = {
+			isa = PBXGroup;
+			children = (
+				E41086BF1D14F9EC00D67FF0 /* LearnRMTPDemo */,
+				E41086D91D14F9ED00D67FF0 /* LearnRMTPDemoTests */,
+				E41086E41D14F9ED00D67FF0 /* LearnRMTPDemoUITests */,
+				E41086BE1D14F9EC00D67FF0 /* Products */,
+				8A829E2A0850B0AAB6CD9B31 /* Pods */,
+				6CAE8233E7D197402C24529B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E41086BE1D14F9EC00D67FF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E41086BD1D14F9EC00D67FF0 /* LearnRMTPDemo.app */,
+				E41086D61D14F9ED00D67FF0 /* LearnRMTPDemoTests.xctest */,
+				E41086E11D14F9ED00D67FF0 /* LearnRMTPDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E41086BF1D14F9EC00D67FF0 /* LearnRMTPDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E41086F81D14FBDC00D67FF0 /* Framework */,
+				E41086F71D14FBC900D67FF0 /* TableViewProtocol */,
+				E41086F61D14FBBC00D67FF0 /* Model */,
+				E41086F51D14FB7C00D67FF0 /* View */,
+				E41086F41D14FB6900D67FF0 /* Utils */,
+				E41086F31D14FB5900D67FF0 /* Controllers */,
+				E41086C31D14F9EC00D67FF0 /* AppDelegate.h */,
+				E41086C41D14F9EC00D67FF0 /* AppDelegate.m */,
+				E41086C91D14F9EC00D67FF0 /* Main.storyboard */,
+				E41086CC1D14F9EC00D67FF0 /* Assets.xcassets */,
+				E41086CE1D14F9EC00D67FF0 /* LaunchScreen.storyboard */,
+				E41086D11D14F9ED00D67FF0 /* Info.plist */,
+				E41086C01D14F9EC00D67FF0 /* Supporting Files */,
+			);
+			path = LearnRMTPDemo;
+			sourceTree = "<group>";
+		};
+		E41086C01D14F9EC00D67FF0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E41086C11D14F9EC00D67FF0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E41086D91D14F9ED00D67FF0 /* LearnRMTPDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E41086DA1D14F9ED00D67FF0 /* LearnRMTPDemoTests.m */,
+				E41086DC1D14F9ED00D67FF0 /* Info.plist */,
+			);
+			path = LearnRMTPDemoTests;
+			sourceTree = "<group>";
+		};
+		E41086E41D14F9ED00D67FF0 /* LearnRMTPDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E41086E51D14F9ED00D67FF0 /* LearnRMTPDemoUITests.m */,
+				E41086E71D14F9ED00D67FF0 /* Info.plist */,
+			);
+			path = LearnRMTPDemoUITests;
+			sourceTree = "<group>";
+		};
+		E41086F31D14FB5900D67FF0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E41086C61D14F9EC00D67FF0 /* ViewController.h */,
+				E41086C71D14F9EC00D67FF0 /* ViewController.m */,
+				E410871C1D15105D00D67FF0 /* LiveViewController.h */,
+				E410871D1D15105D00D67FF0 /* LiveViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E41086F41D14FB6900D67FF0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E41086F91D14FC4200D67FF0 /* CustomTool.h */,
+				E41086FA1D14FC4200D67FF0 /* HJTClearCacheTool.h */,
+				E41086FB1D14FC4200D67FF0 /* HJTClearCacheTool.m */,
+				E41086FC1D14FC4200D67FF0 /* HJTNetTool.h */,
+				E41086FD1D14FC4200D67FF0 /* HJTNetTool.m */,
+				E41086FE1D14FC4200D67FF0 /* ServerAddress.h */,
+				E41086FF1D14FC4200D67FF0 /* UIViewController+changeNavBarItem.h */,
+				E41087001D14FC4200D67FF0 /* UIViewController+changeNavBarItem.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		E41086F51D14FB7C00D67FF0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E410870D1D14FDAF00D67FF0 /* DataTableViewCell.h */,
+				E410870E1D14FDAF00D67FF0 /* DataTableViewCell.m */,
+				E410870F1D14FDAF00D67FF0 /* DataTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E41086F61D14FBBC00D67FF0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E41087141D15076400D67FF0 /* MovieRMTPDataModels.h */,
+				E41087121D15076400D67FF0 /* MovieRMTPCreator.h */,
+				E41087131D15076400D67FF0 /* MovieRMTPCreator.m */,
+				E41087151D15076400D67FF0 /* MovieRMTPLives.h */,
+				E41087161D15076400D67FF0 /* MovieRMTPLives.m */,
+				E41087171D15076400D67FF0 /* MovieRMTPMovieRMTP.h */,
+				E41087181D15076400D67FF0 /* MovieRMTPMovieRMTP.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E41086F71D14FBC900D67FF0 /* TableViewProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				E41087041D14FD2000D67FF0 /* TableViewDataSource.h */,
+				E41087051D14FD2000D67FF0 /* TableViewDataSource.m */,
+				E41087061D14FD2000D67FF0 /* TableViewDelegate.h */,
+				E41087071D14FD2000D67FF0 /* TableViewDelegate.m */,
+			);
+			name = TableViewProtocol;
+			sourceTree = "<group>";
+		};
+		E41086F81D14FBDC00D67FF0 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				E410873D1D15126A00D67FF0 /* IJKMediaFramework.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E41086BC1D14F9EC00D67FF0 /* LearnRMTPDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E41086EA1D14F9ED00D67FF0 /* Build configuration list for PBXNativeTarget "LearnRMTPDemo" */;
+			buildPhases = (
+				3E4717B4380A6D73CB231D31 /* Check Pods Manifest.lock */,
+				E41086B91D14F9EC00D67FF0 /* Sources */,
+				E41086BA1D14F9EC00D67FF0 /* Frameworks */,
+				E41086BB1D14F9EC00D67FF0 /* Resources */,
+				BDFB1FA05EB152E2A2D8CA16 /* Embed Pods Frameworks */,
+				7F3CEC200D96170EF8C4A673 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LearnRMTPDemo;
+			productName = LearnRMTPDemo;
+			productReference = E41086BD1D14F9EC00D67FF0 /* LearnRMTPDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E41086D51D14F9ED00D67FF0 /* LearnRMTPDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E41086ED1D14F9ED00D67FF0 /* Build configuration list for PBXNativeTarget "LearnRMTPDemoTests" */;
+			buildPhases = (
+				E41086D21D14F9ED00D67FF0 /* Sources */,
+				E41086D31D14F9ED00D67FF0 /* Frameworks */,
+				E41086D41D14F9ED00D67FF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E41086D81D14F9ED00D67FF0 /* PBXTargetDependency */,
+			);
+			name = LearnRMTPDemoTests;
+			productName = LearnRMTPDemoTests;
+			productReference = E41086D61D14F9ED00D67FF0 /* LearnRMTPDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E41086E01D14F9ED00D67FF0 /* LearnRMTPDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E41086F01D14F9ED00D67FF0 /* Build configuration list for PBXNativeTarget "LearnRMTPDemoUITests" */;
+			buildPhases = (
+				E41086DD1D14F9ED00D67FF0 /* Sources */,
+				E41086DE1D14F9ED00D67FF0 /* Frameworks */,
+				E41086DF1D14F9ED00D67FF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E41086E31D14F9ED00D67FF0 /* PBXTargetDependency */,
+			);
+			name = LearnRMTPDemoUITests;
+			productName = LearnRMTPDemoUITests;
+			productReference = E41086E11D14F9ED00D67FF0 /* LearnRMTPDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E41086B51D14F9EC00D67FF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Heige;
+				TargetAttributes = {
+					E41086BC1D14F9EC00D67FF0 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					E41086D51D14F9ED00D67FF0 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E41086BC1D14F9EC00D67FF0;
+					};
+					E41086E01D14F9ED00D67FF0 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E41086BC1D14F9EC00D67FF0;
+					};
+				};
+			};
+			buildConfigurationList = E41086B81D14F9EC00D67FF0 /* Build configuration list for PBXProject "LearnRMTPDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E41086B41D14F9EC00D67FF0;
+			productRefGroup = E41086BE1D14F9EC00D67FF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E41086BC1D14F9EC00D67FF0 /* LearnRMTPDemo */,
+				E41086D51D14F9ED00D67FF0 /* LearnRMTPDemoTests */,
+				E41086E01D14F9ED00D67FF0 /* LearnRMTPDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E41086BB1D14F9EC00D67FF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41086D01D14F9EC00D67FF0 /* LaunchScreen.storyboard in Resources */,
+				E41086CD1D14F9EC00D67FF0 /* Assets.xcassets in Resources */,
+				E41086CB1D14F9EC00D67FF0 /* Main.storyboard in Resources */,
+				E41087111D14FDAF00D67FF0 /* DataTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41086D41D14F9ED00D67FF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41086DF1D14F9ED00D67FF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E4717B4380A6D73CB231D31 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7F3CEC200D96170EF8C4A673 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LearnRMTPDemo/Pods-LearnRMTPDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDFB1FA05EB152E2A2D8CA16 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LearnRMTPDemo/Pods-LearnRMTPDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E41086B91D14F9EC00D67FF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E410871E1D15105D00D67FF0 /* LiveViewController.m in Sources */,
+				E41087021D14FC4200D67FF0 /* HJTNetTool.m in Sources */,
+				E41087081D14FD2000D67FF0 /* TableViewDataSource.m in Sources */,
+				E41086C81D14F9EC00D67FF0 /* ViewController.m in Sources */,
+				E410871A1D15076400D67FF0 /* MovieRMTPLives.m in Sources */,
+				E41087011D14FC4200D67FF0 /* HJTClearCacheTool.m in Sources */,
+				E41087091D14FD2000D67FF0 /* TableViewDelegate.m in Sources */,
+				E41086C51D14F9EC00D67FF0 /* AppDelegate.m in Sources */,
+				E41087191D15076400D67FF0 /* MovieRMTPCreator.m in Sources */,
+				E41087101D14FDAF00D67FF0 /* DataTableViewCell.m in Sources */,
+				E410871B1D15076400D67FF0 /* MovieRMTPMovieRMTP.m in Sources */,
+				E41086C21D14F9EC00D67FF0 /* main.m in Sources */,
+				E41087031D14FC4200D67FF0 /* UIViewController+changeNavBarItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41086D21D14F9ED00D67FF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41086DB1D14F9ED00D67FF0 /* LearnRMTPDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41086DD1D14F9ED00D67FF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41086E61D14F9ED00D67FF0 /* LearnRMTPDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E41086D81D14F9ED00D67FF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E41086BC1D14F9EC00D67FF0 /* LearnRMTPDemo */;
+			targetProxy = E41086D71D14F9ED00D67FF0 /* PBXContainerItemProxy */;
+		};
+		E41086E31D14F9ED00D67FF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E41086BC1D14F9EC00D67FF0 /* LearnRMTPDemo */;
+			targetProxy = E41086E21D14F9ED00D67FF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E41086C91D14F9EC00D67FF0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E41086CA1D14F9EC00D67FF0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E41086CE1D14F9EC00D67FF0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E41086CF1D14F9EC00D67FF0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E41086E81D14F9ED00D67FF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E41086E91D14F9ED00D67FF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E41086EB1D14F9ED00D67FF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C45F664A373DA61A20B2F387 /* Pods-LearnRMTPDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LearnRMTPDemo",
+				);
+				INFOPLIST_FILE = LearnRMTPDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.toyohu.hejintao.LearnRMTPDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E41086EC1D14F9ED00D67FF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E3F75E85BAF62FCB312F1D1 /* Pods-LearnRMTPDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LearnRMTPDemo",
+				);
+				INFOPLIST_FILE = LearnRMTPDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.toyohu.hejintao.LearnRMTPDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E41086EE1D14F9ED00D67FF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LearnRMTPDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.toyohu.hejintao.LearnRMTPDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearnRMTPDemo.app/LearnRMTPDemo";
+			};
+			name = Debug;
+		};
+		E41086EF1D14F9ED00D67FF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LearnRMTPDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.toyohu.hejintao.LearnRMTPDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearnRMTPDemo.app/LearnRMTPDemo";
+			};
+			name = Release;
+		};
+		E41086F11D14F9ED00D67FF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LearnRMTPDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.toyohu.hejintao.LearnRMTPDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LearnRMTPDemo;
+			};
+			name = Debug;
+		};
+		E41086F21D14F9ED00D67FF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LearnRMTPDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.toyohu.hejintao.LearnRMTPDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LearnRMTPDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E41086B81D14F9EC00D67FF0 /* Build configuration list for PBXProject "LearnRMTPDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E41086E81D14F9ED00D67FF0 /* Debug */,
+				E41086E91D14F9ED00D67FF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E41086EA1D14F9ED00D67FF0 /* Build configuration list for PBXNativeTarget "LearnRMTPDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E41086EB1D14F9ED00D67FF0 /* Debug */,
+				E41086EC1D14F9ED00D67FF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E41086ED1D14F9ED00D67FF0 /* Build configuration list for PBXNativeTarget "LearnRMTPDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E41086EE1D14F9ED00D67FF0 /* Debug */,
+				E41086EF1D14F9ED00D67FF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E41086F01D14F9ED00D67FF0 /* Build configuration list for PBXNativeTarget "LearnRMTPDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E41086F11D14F9ED00D67FF0 /* Debug */,
+				E41086F21D14F9ED00D67FF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E41086B51D14F9EC00D67FF0 /* Project object */;
+}
